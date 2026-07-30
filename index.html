@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="MusicDeck Lite は、iPhoneからMacの音楽操作・アプリ起動・ウィンドウ整理をまとめて行えるリモートデッキです。"
+    />
+    <meta name="theme-color" content="#f7f4f0" />
+    <title>MusicDeck Lite | 音楽を止めずに、Macをもっと手元へ。</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&family=Noto+Sans+JP:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="noise" aria-hidden="true"></div>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="MusicDeck Lite ホーム">
+        <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span>
+        <span>MusicDeck Lite</span>
+      </a>
+      <nav class="desktop-nav" aria-label="メインナビゲーション">
+        <a href="#about">できること</a>
+        <a href="#how-to">使い方</a>
+        <a href="#download">ダウンロード</a>
+      </nav>
+      <a class="header-download" href="#download">ダウンロード <span>↗</span></a>
+      <button class="menu-button" aria-controls="mobile-nav" aria-expanded="false" aria-label="メニューを開く">
+        <span></span><span></span>
+      </button>
+    </header>
+
+    <nav class="mobile-nav" id="mobile-nav" aria-label="モバイルナビゲーション" hidden>
+      <a href="#about">できること</a>
+      <a href="#how-to">使い方</a>
+      <a href="#download">ダウンロード</a>
+    </nav>
+
+    <main id="top">
+      <section class="hero section-wrap">
+        <div class="hero-copy reveal">
+          <p class="eyebrow"><span></span> MUSIC &amp; MAC REMOTE</p>
+          <h1>音楽を止めずに、<br /><em>Macをもっと手元へ。</em></h1>
+          <p class="hero-lead">
+            再生操作・アプリ起動・ウィンドウ整理をiPhoneからまとめて行える、<br />シンプルで美しいMac用リモートデッキです。
+          </p>
+          <div class="hero-actions">
+            <a class="button button-dark" href="#download">無料で始める <span>↓</span></a>
+            <a class="text-link" href="#about">できることを見る <span>→</span></a>
+          </div>
+        </div>
+
+        <div class="device-stage actual-stage reveal" aria-label="MusicDeckLite の実際のアプリ画面">
+          <div class="stage-sun"></div>
+          <div class="floating-note note-one">♪</div>
+          <div class="floating-note note-two">✦</div>
+          <figure class="screenshot-frame landscape-frame">
+            <img src="assets/musicdeck-for-mac.png" alt="MusicDeck for Mac の接続画面。QRコードを使って iPhone からMacを操作する設定画面" />
+            <figcaption>MAC APP</figcaption>
+          </figure>
+          <figure class="screenshot-frame portrait-frame">
+            <img src="assets/musicdecklite-portrait.png" alt="MusicDeckLite の縦画面。再生コントロールと操作ボタンが表示されている画面" />
+            <figcaption>IPHONE APP</figcaption>
+          </figure>
+          <p class="stage-caption">REAL APP.<br />REAL CONTROL.</p>
+        </div>
+      </section>
+
+      <section class="marquee" aria-label="MusicDeck の特徴">
+        <div class="marquee-track"><span>MUSIC CONTROL <b>✦</b></span><span>APP LAUNCHER <b>✦</b></span><span>WINDOW ACTIONS <b>✦</b></span><span>MUSIC CONTROL <b>✦</b></span><span>APP LAUNCHER <b>✦</b></span></div>
+      </section>
+
+      <section id="about" class="features section-wrap">
+        <div class="section-heading reveal">
+          <p class="eyebrow"><span></span> WHAT YOU CAN DO</p>
+          <h2>iPhoneひとつで、<br />Macをもっと軽やかに。</h2>
+        </div>
+        <div class="feature-grid">
+          <article class="feature-card card-yellow reveal">
+            <p class="card-number">01</p>
+            <div class="feature-icon icon-library" aria-hidden="true"><i></i><i></i><i></i></div>
+            <h3>すぐつながる。<br />すぐ使える。</h3>
+            <p>QRコードを読むだけでMacとペアリング。次回からは前回のMacへすばやく再接続できます。</p>
+          </article>
+          <article class="feature-card card-blue reveal">
+            <p class="card-number">02</p>
+            <div class="feature-icon icon-heart" aria-hidden="true">♡</div>
+            <h3>音楽を、<br />手元で操作。</h3>
+            <p>曲名・アーティスト・アルバム・ジャケットをリアルタイム表示。再生、曲送り、シークも直感的です。</p>
+          </article>
+          <article class="feature-card card-coral reveal">
+            <p class="card-number">03</p>
+            <div class="feature-icon icon-devices" aria-hidden="true"><span></span><i></i></div>
+            <h3>Mac操作も、<br />まとめて。</h3>
+            <p>よく使うアプリを最大8個までワンタップ起動。全画面・最小化・左右半分表示もまとめて実行できます。</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="how-to" class="how-to">
+        <div class="section-wrap how-inner">
+          <div class="how-copy reveal">
+            <p class="eyebrow eyebrow-light"><span></span> GET STARTED</p>
+            <h2>はじめるのは、<br /><em>QRを読むだけ。</em></h2>
+            <p>3つのステップで、iPhoneがMacのための操作デッキになります。</p>
+          </div>
+          <ol class="steps">
+            <li class="reveal"><span class="step-count">01</span><div><h3>2つのアプリをダウンロード</h3><p>iPhoneにMusicDeck Lite、MacにMusicDeck for Macを入れます。</p></div><span class="step-arrow">↘</span></li>
+            <li class="reveal"><span class="step-count">02</span><div><h3>QRコードを読み取る</h3><p>Macに表示されたQRコードをiPhoneで読み取り、ペアリングします。</p></div><span class="step-arrow">↘</span></li>
+            <li class="reveal"><span class="step-count">03</span><div><h3>手元からMacを操作</h3><p>音楽の再生からアプリ起動、ウィンドウ整理まで、すぐに始められます。</p></div><span class="step-arrow">↘</span></li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="tips section-wrap">
+        <div class="tips-visual reveal" aria-hidden="true">
+          <div class="record"><i></i><b>MD</b></div>
+          <div class="tonearm"><i></i></div>
+          <div class="visual-label">YOUR<br />DECK</div>
+        </div>
+        <div class="tips-copy reveal">
+          <p class="eyebrow"><span></span> LITTLE TIPS</p>
+          <h2>あなたらしい、<br />手元のデッキに。</h2>
+          <div class="tip-list">
+            <details open><summary><span>+</span> 縦でも横でも、見やすく</summary><p>縦持ち・横持ちのどちらでも、音楽と操作に集中できる固定デッキUIです。</p></details>
+            <details><summary><span>+</span> 背景を好きな雰囲気に</summary><p>標準・単色・ジャケットぼかし・ジャケット由来のカラーから背景を選べます。</p></details>
+            <details><summary><span>+</span> プライバシーを大切に</summary><p>接続情報は端末のKeychainで管理。基本はMacとiPhone間のローカル直接通信で、広告・解析SDKはありません。</p></details>
+          </div>
+        </div>
+      </section>
+
+      <section id="download" class="download section-wrap">
+        <div class="download-heading reveal">
+          <p class="eyebrow"><span></span> DOWNLOAD</p>
+          <h2>Macを、もっと手元に。</h2>
+          <p>iPhoneとMacにアプリを入れて、いつもの操作をもっと軽やかに。</p>
+        </div>
+        <div class="download-cards">
+          <article class="download-card mac-card reveal">
+            <div class="download-card-top"><span class="platform-icon mac-icon" aria-hidden="true">⌘</span><span class="available">MACOS</span></div>
+            <div><h3>MusicDeck<br /><em>for Mac</em></h3><p>iPhoneからMacを操作するためのコンパニオンアプリ。</p></div>
+            <a class="store-button" href="https://apps.apple.com/jp/search?term=MusicDeck%20for%20Mac" data-store-link="mac" target="_blank" rel="noopener">Mac App Store で入手 <span>↗</span></a>
+          </article>
+          <article class="download-card iphone-card reveal">
+            <div class="download-card-top"><span class="platform-icon iphone-icon" aria-hidden="true">▯</span><span class="available">IOS</span></div>
+            <div><h3>MusicDeck<br /><em>Lite</em></h3><p>音楽とMac操作をまとめる、iPhone用リモートデッキ。</p></div>
+            <a class="store-button" href="https://apps.apple.com/jp/search?term=MusicDeckLite" data-store-link="iphone" target="_blank" rel="noopener">App Store で入手 <span>↗</span></a>
+          </article>
+        </div>
+        <p class="download-note reveal">無料でダウンロードできます。対応OSは各ストアの製品ページをご確認ください。</p>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-top section-wrap">
+        <a class="brand brand-light" href="#top"><span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span><span>MusicDeck Lite</span></a>
+        <p>Macと音楽の時間を、もっと自由に。</p>
+        <a class="back-top" href="#top">TOP へ <span>↑</span></a>
+      </div>
+      <div class="footer-bottom section-wrap"><p>© <span id="year"></span> MusicDeck Lite. All rights reserved.</p><div><a href="#top">プライバシー</a><a href="#top">お問い合わせ</a></div></div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
