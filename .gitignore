@@ -1,0 +1,19 @@
+# macOS
+.DS_Store
+
+# Editor settings
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Local environment files
+.env
+.env.*
+!.env.example
+
+# Dependency and build output (if a local build workflow is added)
+node_modules/
+dist/
+build/
+coverage/

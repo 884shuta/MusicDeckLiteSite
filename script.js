@@ -1,18 +1,6 @@
 const menuButton = document.querySelector('.menu-button');
 const mobileNav = document.querySelector('.mobile-nav');
 
-// Replace these search URLs with the published product-page URLs as soon as
-// each app's App Store ID is available. Keeping them here avoids hunting
-// through the markup when the releases go live.
-const STORE_URLS = {
-  mac: 'https://apps.apple.com/jp/search?term=MusicDeck%20for%20Mac',
-  iphone: 'https://apps.apple.com/jp/search?term=MusicDeckLite',
-};
-
-document.querySelectorAll('[data-store-link]').forEach((link) => {
-  link.href = STORE_URLS[link.dataset.storeLink];
-});
-
 menuButton?.addEventListener('click', () => {
   const isOpen = menuButton.getAttribute('aria-expanded') === 'true';
   menuButton.setAttribute('aria-expanded', String(!isOpen));
@@ -31,5 +19,28 @@ const observer = new IntersectionObserver(
   { threshold: 0.12 }
 );
 document.querySelectorAll('.reveal').forEach((element) => observer.observe(element));
+
+const dmgDownload = document.querySelector('[data-dmg-download]');
+
+if (dmgDownload) {
+  const downloadStatus = document.querySelector('[data-dmg-status]');
+  const setDmgAvailability = (isAvailable) => {
+    dmgDownload.classList.toggle('is-unavailable', !isAvailable);
+    dmgDownload.setAttribute('aria-disabled', String(!isAvailable));
+    dmgDownload.tabIndex = isAvailable ? 0 : -1;
+    downloadStatus.textContent = isAvailable
+      ? 'DMGファイルをダウンロードしてインストールできます。'
+      : 'DMGファイルを準備中です。公開まで少々お待ちください。';
+  };
+
+  setDmgAvailability(false);
+  fetch(dmgDownload.href, { method: 'HEAD' })
+    .then((response) => setDmgAvailability(response.ok))
+    .catch(() => setDmgAvailability(false));
+
+  dmgDownload.addEventListener('click', (event) => {
+    if (dmgDownload.getAttribute('aria-disabled') === 'true') event.preventDefault();
+  });
+}
 
 document.getElementById('year').textContent = new Date().getFullYear();
